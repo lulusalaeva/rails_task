@@ -1,0 +1,8 @@
+.span8
+  p
+    = comment.content
+  div
+    span.badge.badge-primary commented #{comment.created_at.try(:strftime, '%c')}
+    .pull-right
+      = comment.user.try(:email)
+  hr/

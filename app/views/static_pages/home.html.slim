@@ -1,0 +1,8 @@
+h1 Listing posts
+
+hr/
+= will_paginate @posts
+- @posts.each do |post|
+  = render 'posts/post', post: post
+
+br

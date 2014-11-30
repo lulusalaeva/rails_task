@@ -1,0 +1,12 @@
+= simple_form_for [current_user, @post] do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+    = f.input :content
+
+  .form-actions
+    .btn-group
+      = f.submit 'Save', class: 'btn btn-primary'
+      = link_to 'Back', user_posts_path(current_user), class: 'btn btn-danger'
+

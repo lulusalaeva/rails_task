@@ -1,0 +1,10 @@
+.span8
+  h3
+    = link_to post.title, user_post_path(post.user, post)
+  p
+    = post.content
+  div
+    span.badge.badge-primary Posted #{post.created_at.strftime('%c')}
+    .pull-right
+      = post.user.email
+  hr/

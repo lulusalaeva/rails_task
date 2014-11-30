@@ -1,0 +1,7 @@
+p#notice = notice
+
+= render 'post', post: @post
+
+- if @post.user == current_user
+  = render 'shared/edit_delete_btn'
+= render 'comments/comments', comments: @comments
