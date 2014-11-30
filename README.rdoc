@@ -4,6 +4,4 @@ cd rails_task
 
 bundle
 
-rake db:migrate
-
-rake db:seed
+rake db:migrate db:seed
