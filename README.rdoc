@@ -2,4 +2,8 @@ git clone https://github.com/lulusalaeva/rails_task
 
 cd rails_task
 
-rake db:migrate && db:seed
+bundle
+
+rake db:migrate
+
+rake db:seed
